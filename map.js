@@ -36,8 +36,8 @@ const map = function(array, callback) {
 };
 
 const results1 = map(words, word => word[0]);
-console.log(results1);
+assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]);
 const results2 = map(words, word => word);
-console.log(results2);
+assertArraysEqual(results2, [ 'ground', 'control', 'to', 'major', 'tom' ]);
 const results3 = map(words, word => word.split("").reverse().join(""));
-console.log(results3);
+assertArraysEqual(results3, [ 'dnuorg', 'lortnoc', 'ot', 'rojam', 'mot' ]);
