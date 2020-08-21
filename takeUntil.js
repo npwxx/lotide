@@ -46,7 +46,7 @@ const array1 = ["I","have","a","husky","named","Finn"];
 const arrayResult1 = takeUntil(array1, x => x === "named");
 assertArraysEqual(arrayResult1, [ 'I', 'have', 'a', 'husky' ]);
 const array2 = ["I","have","a","cat","named","Percy","."];
-const arrayResult2 = takeUntil(array2, x => x === ".")
+const arrayResult2 = takeUntil(array2, x => x === ".");
 assertArraysEqual(arrayResult2, [ 'I', 'have', 'a', 'cat', 'named', 'Percy' ]);
 
 const data1 = [1, 2, 5, 7, 2, 1, 2, 4, 5];
