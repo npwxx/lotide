@@ -1,4 +1,5 @@
-const eqArrays = function(arr1, arr2) {
+const eqArrays = require("./eqArrays");
+/*              function(arr1, arr2) {
   if (arr1.length === arr2.length) {
     for (let i = 0; i < arr1.length; i++) {
       if (arr1[i] !== arr2[i]) {
@@ -9,7 +10,7 @@ const eqArrays = function(arr1, arr2) {
   } else {
     return false;
   }
-};
+};*/
 
 // assertArraysEqual will take in two arrays and console.log() an appropriate message to the console.
 // this assertion function will make use of your eqArrays function for array comparison
@@ -26,3 +27,5 @@ assertArraysEqual([1, 2, 3], [1, 2, 3]);
 assertArraysEqual([1, 2, 3], [1, 2, 3, 4]);
 assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]);
 assertArraysEqual(["1", 2, 3], [1, 2, 3]);
+
+module.exports = assertArraysEqual;

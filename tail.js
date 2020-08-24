@@ -1,10 +1,11 @@
-const assertEqual = function(actual, expected) {
+const assertEqual = require("./assertEqual");
+/*const assertEqual = function(actual, expected) {
   if (actual !== expected) {
     console.log(`🙅‍♀️🤦‍♀️‍Assertion Failed: ${actual} !== ${expected}`);
   } else {
     console.log(`👌👌Assertion Passed: ${actual} === ${expected}`);
   }
-};
+};*/
 
 const tail = function(input) {
   let output = [];
@@ -25,3 +26,5 @@ assertEqual(words.length, 3); // original array should still have 3 elements!
 
 const anotherTest = tail(["Only one element"]);
 assertEqual(anotherTest.length, 0);
+
+module.exports = tail;

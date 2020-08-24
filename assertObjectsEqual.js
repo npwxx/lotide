@@ -1,4 +1,5 @@
-const eqArrays = function(arr1, arr2) {
+//const eqArrays = require("./eqArrays");
+/*              function(arr1, arr2) {
   if (arr1 === undefined && arr2 === undefined) {
     return true;
   }
@@ -15,9 +16,10 @@ const eqArrays = function(arr1, arr2) {
   } else {
     return false;
   }
-};
+};*/
 
-const eqObjects = function(obj1, obj2) {
+const eqObjects = require("./eqObjects");
+/*                function(obj1, obj2) {
   const keys1 = Object.keys(obj1);
   const keys2 = Object.keys(obj2);
   console.log(keys1, keys2);
@@ -34,7 +36,7 @@ const eqObjects = function(obj1, obj2) {
     }
   }
   return true;
-};
+};*/
 
 const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect;
@@ -47,3 +49,5 @@ const assertObjectsEqual = function(actual, expected) {
 
 assertObjectsEqual({a:1}, {a:1});
 assertObjectsEqual({a:1}, {a:2});
+
+module.exports = assertObjectsEqual;

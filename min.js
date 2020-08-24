@@ -24,3 +24,5 @@ console.log(`The shortest book out of a list of single book with 232 pages has $
 
 const temperatures = [45, 10, -20, 0, 3, -20];
 console.log(`The coldest temperature amongst 45C, 10C, -20C, 0C, 3C and -20C is ${min(temperatures)}C`);
+
+module.exports = min;

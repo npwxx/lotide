@@ -1,12 +1,14 @@
-const assertArraysEqual = function(actual, expected) {
+const assertArraysEqual = require("./assertArraysEqual");
+/*const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
     console.log(`👌👌Assertion Passed: ${actual} === ${expected}`);
   } else {
     console.log(`🙅‍♀️🤦‍♀️‍Assertion Failed: ${actual} !== ${expected}`);
   }
-};
+};*/
 
-const eqArrays = function(arr1, arr2) {
+//const eqArrays = require("./eqArrays");
+/*const eqArrays = function(arr1, arr2) {
   if (arr1 === undefined && arr2 === undefined) {
     return true;
   }
@@ -23,7 +25,7 @@ const eqArrays = function(arr1, arr2) {
   } else {
     return false;
   }
-};
+};*/
 
 const words = ["ground", "control", "to", "major", "tom"];
 
@@ -41,3 +43,5 @@ const results2 = map(words, word => word);
 assertArraysEqual(results2, [ 'ground', 'control', 'to', 'major', 'tom' ]);
 const results3 = map(words, word => word.split("").reverse().join(""));
 assertArraysEqual(results3, [ 'dnuorg', 'lortnoc', 'ot', 'rojam', 'mot' ]);
+
+module.exports = map;
