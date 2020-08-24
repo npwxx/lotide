@@ -1,4 +1,3 @@
-// Implement a function eqArrays which takes in two arrays and returns true or false, based on a perfect match.
 const eqArrays = function(arr1, arr2) {
   if (arr1 === undefined && arr2 === undefined) {
     return true;

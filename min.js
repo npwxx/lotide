@@ -7,12 +7,8 @@ const min = function(numbers) {
   return lowest;
 };
 
-
-/*
- * This is some test runner code that's simply calling our min function defined
- * above to verify it's returning the proper minimum. Do not modify it!
- */
-
+/* This is some test runner code that's simply calling our min function defined
+ * above to verify it's returning the proper minimum. Do not modify it!*/
 const flightPrices = [1260, 490, 599, 1400, 820];
 console.log(`The cheapest flight amongst $1260, $490, $599, $1400 and $820 costs $${min(flightPrices)}`);
 
