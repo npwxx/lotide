@@ -9,6 +9,7 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 
+// TODO: Tests to be made into own test file
 //assertObjectsEqual({a:1}, {a:1});
 //assertObjectsEqual({a:1}, {a:2});
 

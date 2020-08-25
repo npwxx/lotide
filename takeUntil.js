@@ -11,8 +11,7 @@ const takeUntil = function(array, callback) {
   }
   return result;
 };
-//TODO: Tests to be made into own test fine
-
+// TODO: Tests to be made into own test file
 // const array1 = ["I","have","a","husky","named","Finn"];
 // const arrayResult1 = takeUntil(array1, x => x === "named");
 // assertArraysEqual(arrayResult1, [ 'I', 'have', 'a', 'husky' ]);

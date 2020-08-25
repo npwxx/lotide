@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@npwxx/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "mini Lodash clone library. Used as a learning exercise for LighthouseLabs",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,10 @@
     "type": "git",
     "url": "git+https://github.com/npwxx/lotide.git"
   },
-  "author": "",
+  "author": {
+    "name": "Nicole Woodcock",
+    "email": "nicole.xox@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/npwxx/lotide/issues"

@@ -17,7 +17,9 @@ const flatten = function(arr) {
   //console.log(flattenedArr);
   return flattenedArr;
 };
-console.log(flatten(arr));
-assertArraysEqual(flatten(arr), [1,2,3,4,5,6]);
+
+// TODO: Tests to be made into own test file
+// console.log(flatten(arr));
+// assertArraysEqual(flatten(arr), [1,2,3,4,5,6]);
 
 module.exports = flatten;

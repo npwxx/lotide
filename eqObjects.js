@@ -20,6 +20,7 @@ const eqObjects = function(obj1, obj2) {
   return true;
 };
 
+// TODO: Tests to be made into own test file
 // const ab = { a: "1", b: "2" };
 // const ba = { b: "2", a: "1" };
 // assertEqual(eqObjects(ab, ba), true); // => true
